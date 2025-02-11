@@ -4,9 +4,8 @@ const student = {
 	city:"delhi"
 };
 
-// Function to get all keys from the object
-function getKeys(obj) {
-  return Object.keys(obj);
+Object.prototype.getkeys=function() {
+	return Object.keys(this)
 }
 
 // Testing the function
