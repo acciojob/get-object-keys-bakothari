@@ -1,11 +1,11 @@
-const student = {
+const myObj = {
   name: "John",
   age: 30,
   city: "New York",
-
   getKeys: function() {
     return Object.keys(this);
   }
 };
 
-console.log(student.getKeys());  // ["name", "age", "city"]
+const keys = myObj.getKeys();
+console.log(keys);  // This should now work, and it will print: ["name", "age", "city"]
