@@ -1,10 +1,11 @@
-//your JS code here. If required.
-let obj = {
-	name:"jhon",
-	age:23,
-	city:"delhi"
-}
-function getKeys(student) {
-	 return Object.keys(student)
-}
-console.log(getKeys(obj))
+const student = {
+  name: "John",
+  age: 30,
+  city: "New York",
+  
+  getKeys: function () {
+    return Object.keys(this).filter(key => key !== "getKeys");
+  }
+};
+
+console.log(student.getKeys()); 
