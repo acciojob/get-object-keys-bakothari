@@ -1,11 +1,13 @@
-const myObj = {
+const student = {
   name: "John",
-  age: 30,
-  city: "New York",
-  getKeys: function() {
-    return Object.keys(this);
-  }
+	age :30,
+	city:"delhi"
 };
 
-const keys = myObj.getKeys();
-console.log(keys);  // This should now work, and it will print: ["name", "age", "city"]
+// Function to get all keys from the object
+function getKeys(obj) {
+  return Object.keys(obj);
+}
+
+// Testing the function
+console.log(getKeys(student)); // Output: ["name"]
