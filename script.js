@@ -1,12 +1,12 @@
-const student = {
-  name: "John",
-	age :30,
-	city:"delhi"
+Object.prototype.getKeys = function() {
+  return Object.keys(this);
 };
 
-Object.prototype.getkeys=function() {
-	return Object.keys(this)
-}
-
 // Testing the function
-console.log(getKeys(student)); // Output: ["name"]
+const student = {
+  name: "John",
+  age: 30,
+  city: "Delhi"
+};
+
+console.log(student.getKeys()); // Output: ["name", "age", "city"]
