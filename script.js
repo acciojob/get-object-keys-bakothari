@@ -3,9 +3,9 @@ const student = {
   age: 30,
   city: "New York",
 
-  getKeys: function () {
+  getKeys: function() {
     return Object.keys(this);
   }
 };
 
-console.log(student.getKeys());
+console.log(student.getKeys());  // ["name", "age", "city"]
